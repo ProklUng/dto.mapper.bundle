@@ -1,5 +1,7 @@
 # Надстройка над [AutoMapperPlusBundle](https://github.com/mark-gerarts/automapper-plus-bundle)
 
+**INTERNAL**
+
 ### Установка
 
 composer.json:
