@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  dto_mapper_bundle.mapper:
+    class: Prokl\DtoMapperBundle\Services\Mapper
+    arguments: ['@automapper_plus.mapper', '@property_info']
+
+  Prokl\DtoMapperBundle\Services\Mapper: '@dto_mapper_bundle.mapper'
+  Prokl\DtoMapperBundle\Services\MapperInterface: '@dto_mapper_bundle.mapper'
